@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script src="./js/script.js" defer></script>
+    <title>Conversor de Moedas</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="logo">
+          <img src="./imgs/logo.svg" alt="Logo" />
+        </div>
+        <div class="form-container">
+          <div class="fields">
+            <div class="content">
+              <label for="value">VALOR</label>
+              <input type="number" id="coin-value" placeholder="0,00" />
+              <span class="error">Digite um valor válido!</span>
+            </div>
+            <div class="content">
+              <label for="type">MOEDA</label>
+              <select id="coin-type">
+                <option value="default" disabled selected>Selecione a moeda</option>
+                <option value="USD-BRL">Dólar Americano</option>
+                <option value="EUR-BRL">Euro</option>
+                <option value="GBP-BRL">Libra Esterlina</option>
+              </select>
+            </div>
+          </div>
+          <div class="btn">
+            <button id="btn-submit">Converter em Reais</button>
+          </div>
+        </div>
+        <div class="form-result">
+            <span id="convert">US$ 1 = R$ 4,86</span>
+            <p id="result">486,00 Reais</p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
